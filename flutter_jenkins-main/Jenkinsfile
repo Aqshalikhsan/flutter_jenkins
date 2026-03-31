@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+    
+    environment {
+        ANDROID_HOME = "/opt/Android"
+        PATH = "/opt/flutter/bin:/opt/Android/cmdline-tools/latest/bin:/opt/Android/platform-tools:$PATH"
+    }
+
+    stages {
+        stage('Build Flutter APK') {
+            steps {
+                // Tambahkan 'flutter_jenkins-main/' di depan alamatnya
+                dir('flutter_jenkins-main/register_system/backend/flutter_app') {
+                    sh 'flutter clean'
+                    sh 'flutter pub get'
+                    sh 'flutter build apk --release'
+                }
+            }
+        }
+        
+        stage('Archive APK') {
+            steps {
+                // Tambahkan 'flutter_jenkins-main/' juga di sini
+                dir('flutter_jenkins-main/register_system/backend/flutter_app') {
+                    archiveArtifacts artifacts: 'build/app/outputs/flutter-apk/app-release.apk', fingerprint: true
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Mantap! Akhirnya Build Flutter APK berhasil.'
+        }
+    }
+}
