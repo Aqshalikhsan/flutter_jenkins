@@ -1,0 +1,13 @@
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/flutter_app
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/icudtl.dat
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.bin
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/NativeAssetsManifest.json
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/shaders/ink_sparkle.frag
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/shaders/stretch_effect.frag
+/mnt/c/Users/Lenovo/Downloads/flutter_jenkins-main/flutter_jenkins-main/register_system/backend/flutter_app/build/linux/x64/debug/bundle/data/flutter_assets/version.json
