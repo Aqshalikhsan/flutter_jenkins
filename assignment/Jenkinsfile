@@ -5,6 +5,7 @@ pipeline {
         JAVA_HOME = "/usr/lib/jvm/java-21-openjdk-amd64"
         ANDROID_HOME = "/var/lib/jenkins/Android/Sdk"
         ANDROID_SDK_ROOT = "/var/lib/jenkins/Android/Sdk"
+        PATH = "${env.PATH}:${JAVA_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/cmdline-tools/latest/bin:/opt/flutter/bin"
     }
 
     stages {
@@ -15,21 +16,15 @@ pipeline {
         }
 
         stage('Build Flutter APK') {
-    steps {
-        dir('register_system/backend/flutter_app') {
-            withEnv([
-                "ANDROID_HOME=/var/lib/jenkins/Android/Sdk",
-                "ANDROID_SDK_ROOT=/var/lib/jenkins/Android/Sdk",
-                "PATH+EXTRA=/opt/flutter/bin:/var/lib/jenkins/Android/Sdk/platform-tools:/var/lib/jenkins/Android/Sdk/cmdline-tools/latest/bin"
-            ]) {
-                sh '/opt/flutter/bin/flutter doctor -v'
-                sh '/opt/flutter/bin/flutter clean'
-                sh '/opt/flutter/bin/flutter pub get'
-                sh '/opt/flutter/bin/flutter build apk --release'
-            }
+            steps {
+                dir('register_system/backend/flutter_app') {
+                    sh '/opt/flutter/bin/flutter doctor -v'
+                    sh '/opt/flutter/bin/flutter clean'
+                    sh '/opt/flutter/bin/flutter pub get'
+                    sh '/opt/flutter/bin/flutter build apk --release'
+                }
+            }   
         }
-    }
-}
 
         stage('Archive APK') {
             steps {
